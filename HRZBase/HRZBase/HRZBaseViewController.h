@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HRZNoNetworkView.h"
 
 @interface HRZBaseViewController : UIViewController
-
+@property (nonatomic, strong) HRZNoNetworkView *noNetworkView;
 @end

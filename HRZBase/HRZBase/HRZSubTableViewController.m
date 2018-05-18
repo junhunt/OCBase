@@ -45,7 +45,12 @@
 
 - (void)emptyDataSet:(UIScrollView *)scrollView didTapButton:(UIButton *)button
 {
-    [self headerRefresh];
+//    [self headerRefresh];
+    
+    __weak typeof(self) weakSelf = self;
+    [self.noNetworkView showInView:self.view completion:^{
+        [weakSelf.noNetworkView removeNoNetworkView];
+    }];
 }
 
 #pragma mark - UITableViewDelegate && UITableViewDataSource

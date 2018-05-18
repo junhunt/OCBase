@@ -23,7 +23,7 @@
     self = [super init];
     if (self) {
         _tableViewStyle = style;
-        self.showEmptyDataSet = YES;
+        self.showNoDataSet = YES;
     }
     return self;
 }
@@ -33,7 +33,7 @@
     self = [super init];
     if (self) {
         _tableViewStyle = UITableViewStyleGrouped;
-        self.showEmptyDataSet = YES;
+        self.showNoDataSet = YES;
     }
     return self;
 }
@@ -107,7 +107,7 @@
 
 - (BOOL)emptyDataSetShouldDisplay:(UIScrollView *)scrollView
 {
-    return self.isShowEmptyDataSet;
+    return self.isShowNoDataSet;
 }
 
 - (CGFloat)verticalOffsetForEmptyDataSet:(UIScrollView *)scrollView

@@ -7,6 +7,7 @@
 //
 
 #import "HRZBaseViewController.h"
+#import "RealReachability.h"
 
 @interface HRZBaseViewController ()
 
@@ -17,6 +18,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(networkChanged:)
+                                                 name:kRealReachabilityChangedNotification
+                                               object:nil];
+}
+
+- (void)networkChanged:(NSNotification *)notification
+{
+    RealReachability *reachability = (RealReachability *)notification.object;
+    ReachabilityStatus status = [reachability currentReachabilityStatus];
+    NSLog(@"currentStatus:%@",@(status));
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,4 +46,11 @@
 }
 */
 
+- (HRZNoNetworkView *)noNetworkView
+{
+    if (_noNetworkView == nil) {
+        _noNetworkView = [[HRZNoNetworkView alloc]init];
+    }
+    return _noNetworkView;
+}
 @end

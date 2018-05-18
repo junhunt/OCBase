@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2F2870E8513E7FDF1CF69C74 /* libPods-HRZBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06AC37887E8AED23B5B5DB69 /* libPods-HRZBase.a */; };
+		5B04B51920AEBFDD00204615 /* HRZNoNetworkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B04B51820AEBFDD00204615 /* HRZNoNetworkView.m */; };
 		5B6FF7FD20AAC5A100369351 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6FF7FC20AAC5A100369351 /* AppDelegate.m */; };
 		5B6FF80020AAC5A100369351 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6FF7FF20AAC5A100369351 /* ViewController.m */; };
 		5B6FF80320AAC5A100369351 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6FF80120AAC5A100369351 /* Main.storyboard */; };
@@ -22,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		06AC37887E8AED23B5B5DB69 /* libPods-HRZBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HRZBase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B04B51720AEBFDD00204615 /* HRZNoNetworkView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRZNoNetworkView.h; sourceTree = "<group>"; };
+		5B04B51820AEBFDD00204615 /* HRZNoNetworkView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRZNoNetworkView.m; sourceTree = "<group>"; };
 		5B6FF7F820AAC5A100369351 /* HRZBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HRZBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B6FF7FB20AAC5A100369351 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5B6FF7FC20AAC5A100369351 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -89,6 +92,8 @@
 				5B6FF81B20AACAFE00369351 /* HRZSubTableViewController.m */,
 				5B6FF81720AAC93D00369351 /* HRZNetworkManager.h */,
 				5B6FF81820AAC93D00369351 /* HRZNetworkManager.m */,
+				5B04B51720AEBFDD00204615 /* HRZNoNetworkView.h */,
+				5B04B51820AEBFDD00204615 /* HRZNoNetworkView.m */,
 				5B6FF80120AAC5A100369351 /* Main.storyboard */,
 				5B6FF80420AAC5A300369351 /* Assets.xcassets */,
 				5B6FF80620AAC5A300369351 /* LaunchScreen.storyboard */,
@@ -233,6 +238,7 @@
 				5B6FF81320AAC85300369351 /* HRZBaseViewController.m in Sources */,
 				5B6FF80020AAC5A100369351 /* ViewController.m in Sources */,
 				5B6FF81620AAC87200369351 /* HRZTableViewController.m in Sources */,
+				5B04B51920AEBFDD00204615 /* HRZNoNetworkView.m in Sources */,
 				5B6FF80B20AAC5A300369351 /* main.m in Sources */,
 				5B6FF7FD20AAC5A100369351 /* AppDelegate.m in Sources */,
 				5B6FF81C20AACAFE00369351 /* HRZSubTableViewController.m in Sources */,
